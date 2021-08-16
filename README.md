@@ -5,33 +5,39 @@ Esta é uma proposta de solução para a Atividade Remota
 •	Criaremos uma demanda de times cariocas, identificados no arquivo ClubesCariocas.txt para participar da relação de times do torneio, inseridos no arquivo CampeonatoCarioca.txt.
 •	Existirá uma relação de clubes que não pertencem ao campeonato carioca e estão descritos no arquivo ignorado denominado ClubesDeOutrosEstados.txt.
 •	Diferentemente da Atividade 1, esta insere a possibilidade de colaboração com mais desenvolvedor B, responsável por alterar/modificar o arquivo de times para o torneio Rio-Bahia de futebol, permitindo o acesso ao novo arquivo, Torneio_Rio-Bahia.txt, e a inserção de clubes de futebol bahiano para o match.
+
 Atividade Remota      -        Step by Step
+
 1.	 Instalamos o software GitHub 2.32.0.windows.2 baixado do site http://git-scm.com para Windows 10 32 bits com as ferramentas Git GUI e Git Bash embutidas.
 2.	Habilitamos o View de Explorer de Windows a exibir explicitamente as extensões dos arquivos armazenados nas pastas bem como aqueles ocultos.
 3.	Criamos o diretório AtividadeRemota no Desktop e nos posicionamos nele.
 4.	Confirmamos a versão instalada do Git com o comando
-a.	git –version
+    a.	git –version
 git version 2.32.0.windows.2
 5.	Nos posicionamos no diretório AtividadeRemota e emitimos o comando
-a.	git init para criar o repositório   .git   sob o diretório corrente Atividade 1
+    a.	git init para criar o repositório   .git   sob o diretório corrente Atividade 1
 6.	Criamos os arquivos:
-a.	ClubesCariocas.txt com os nomes dos principais clubes de futebol do Rio de Janeiro
-b.	ClubesDeOutrosEstados.txt com alguns nomes de clubes de outros estados
-c.	CampeonatoCarioca.txt  com os mesmos clubes cariocas
-d.	Torneio_Rio-Bahia, inicialmente com os clubes cariocas apenas e nenhum de outros estados
+    a.	ClubesCariocas.txt com os nomes dos principais clubes de futebol do Rio de Janeiro
+    b.	ClubesDeOutrosEstados.txt com alguns nomes de clubes de outros estados
+    c.	CampeonatoCarioca.txt  com os mesmos clubes cariocas
+    d.	Torneio_Rio-Bahia, inicialmente com os clubes cariocas apenas e nenhum de outros estados
 7.	Criamos o arquivo .gitignore e inserimos neste o nome do arquivo ClubesDeOutrosEstados.txt para ser ignorado pelo git. E que agora não possui clubes baianos.
 8.	Emitimos o comando 
-a.	git status para verificar os arquivos ainda rastreáveis pelo git (aparecem em vermelho)
+    a.	git status para verificar os arquivos ainda rastreáveis pelo git (aparecem em vermelho)
 9.	Configuramos duas das variáveis globais para fins de comunicação futura com o GitHub.com:
-a.	git config - -global user.name   “Antonio-Adilson”
-b.	git config - -global user.email   “a2f_adler@yahoo.com”
+    a.	git config - -global user.name   “Antonio-Adilson”
+    b.	git config - -global user.email   “a2f_adler@yahoo.com”
 10.	A seguir, emitimos o comando
-a.	git add . para adicionar todos os arquivos ainda não monitoráveis ao monitoramento
+    a.	git add . para adicionar todos os arquivos ainda não monitoráveis ao monitoramento
 11.	Então, emitimos o comando
-a.	git commit - que finaliza arquivos depois de adicionados para o monitoramento. Snapshot
+    a.	git commit - que finaliza arquivos depois de adicionados para o monitoramento. Snapshot
 12.	Emitimos o comando 
-a.	git status para verificar se estava tudo ok e fomos bem sucedidos
-Outros comandos úteis a serem explorados: 
+    a.	git status para verificar se estava tudo ok e fomos bem sucedidos
+    
+Outros comandos úteis a serem explorados:
+
+13.  O desenvolvedor B atualizou a tabela do Torneio Rio x Bahia, identificando cada jogo da primeira rodada em colaboração ao desenvolvedor A.
+14.  A aplicação foi então desenvolvida em colaboração pelos dois desenvolvedores A e B.
 
 LISTA DE TODOS OS COMANDOS GIT
 
